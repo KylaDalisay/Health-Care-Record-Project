@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Additional inline styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .medical-history {
+      margin-bottom: 20px;
+    }
+    .medical-history table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .medical-history th, .medical-history td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    .medical-history th {
+      background-color: #f2f2f2;
+    }
+    .add-history-form {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    .add-history-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .add-history-form input[type="text"],
+    .add-history-form textarea {
+      width: calc(100% - 12px);
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .add-history-form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-history-form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Medical History</h2>
+
+    <div class="medical-history">
+      <h3>Medical History for John Doe</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Condition</th>
+            <th>Treatment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023-01-01</td>
+            <td>Fever</td>
+            <td>Prescribed antibiotics</td>
+          </tr>
+          <tr>
+            <td>2022-10-15</td>
+            <td>Injury</td>
+            <td>Applied bandage</td>
+          </tr>
+          <!-- Add more medical history details as needed -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="add-history-form">
+      <h3>Add Medical History</h3>
+      <form>
+        <label for="historyDate">Date</label>
+        <input type="text" id="historyDate" name="historyDate" placeholder="YYYY-MM-DD" required>
+
+        <label for="condition">Condition</label>
+        <input type="text" id="condition" name="condition" placeholder="Enter condition" required>
+
+        <label for="treatment">Treatment</label>
+        <textarea id="treatment" name="treatment" placeholder="Enter treatment"></textarea>
+
+        <input type="submit" value="Add History">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

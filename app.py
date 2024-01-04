@@ -26,5 +26,13 @@ def addPatient():
 def patientlist():
   return render_template('patientlist.html')
 
+@app.route('/personelpatientdetailes')
+def personelpatientdetailes():
+  return render_template("personelpatientdetailes.html")
+
+@app.route("/personelpatientsmedicalhistory")
+def personelpatientsmedicalhistory():
+  return render_template("personelpatientsmedicalhistory.html")
+  
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug = True)

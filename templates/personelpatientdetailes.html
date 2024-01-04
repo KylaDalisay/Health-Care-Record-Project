@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Additional inline styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .patient-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .patient-info > div {
+      flex: 1 1 300px;
+    }
+    img {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .about {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Patient Information</h2>
+    <div class="patient-info">
+      <div>
+        <img src="https://via.placeholder.com/300" alt="Patient's Photo">
+      </div>
+      <div>
+        <h3>Name: John Doe</h3>
+        <p>Address: 1234 Street Name, City, Country</p>
+        <table>
+          <tr>
+            <th>Email</th>
+            <td>johndoe@example.com</td>
+          </tr>
+          <tr>
+            <th>Contact Number</th>
+            <td>+1234567890</td>
+          </tr>
+          <tr>
+            <th>Birthplace</th>
+            <td>City, Country</td>
+          </tr>
+          <tr>
+            <th>Blood Type</th>
+            <td>O+</td>
+          </tr>
+          <tr>
+            <th>Parents' Names</th>
+            <td>Parent 1, Parent 2</td>
+          </tr>
+        </table>
+        <div class="about">
+          <h3>About the Patient</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non quam vitae dolor fermentum aliquet ut ac nisi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

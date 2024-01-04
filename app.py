@@ -10,15 +10,14 @@ def hello_world():
 def signup():
   return render_template('signup.html')
 
-@app.route('/hospitalHomepage')
+@app.route('/doctorsHomepage')
 def hospitalhomepage():
-  return render_template('signup.html')
-
-@app.route('/hospitalinformati')
+  return render_template('hospitalhomepage.html')
 
 @app.route('/doctorHomepage')
   def doctorhomepage():
-    return render_template():
-    
+    return render_template(''):
+
+@app.route('')
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug = True)

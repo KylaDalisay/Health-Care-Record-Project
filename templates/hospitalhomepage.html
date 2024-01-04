@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>Student Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* Additional inline styles */
@@ -14,14 +14,15 @@
     .navbar {
       overflow: hidden;
       background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
     }
     .navbar a {
-      float: left;
-      display: block;
       color: white;
-      text-align: center;
-      padding: 14px 20px;
       text-decoration: none;
+      padding: 10px;
     }
     .navbar a:hover {
       background-color: #ddd;
@@ -43,10 +44,9 @@
       padding: 20px;
     }
     @media screen and (max-width: 600px) {
-      .navbar a {
-        float: none;
-        display: block;
-        text-align: left;
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
@@ -54,23 +54,28 @@
 <body>
 
   <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Grades</a>
+      <a href="#">Profile</a>
+    </div>
+    <div>
+      <span>Welcome, Student!</span>
+    </div>
   </div>
 
   <div class="notification-bar">
-    <p>Notification: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Important: Your submission deadline is approaching. Complete your assignments on time.</p>
   </div>
 
   <div class="menu-bar">
-    <p>Menu: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Menu: Access your course materials, grades, and profile information here.</p>
   </div>
 
   <div class="content">
-    <h2>Welcome to the Homepage</h2>
-    <p>This is the main content of your homepage.</p>
+    <h2>Welcome to the Student Portal</h2>
+    <p>Explore your courses, check your grades, and manage your profile.</p>
   </div>
 
 </body>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor's Patient List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Additional inline styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: calc(100% - 12px);
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Doctor's Patient List</h2>
+    <form>
+      <label for="searchByName">Search by Name</label>
+      <input type="text" id="searchByName" name="searchByName" placeholder="Enter patient's name">
+
+      <label for="searchByID">Search by ID Number</label>
+      <input type="number" id="searchByID" name="searchByID" placeholder="Enter patient's ID number">
+
+      <input type="submit" value="Search">
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Condition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>John Doe</td>
+          <td>35</td>
+          <td>Fever</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Jane Smith</td>
+          <td>28</td>
+          <td>Injury</td>
+        </tr>
+        <!-- Add more patient details as needed -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

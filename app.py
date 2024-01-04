@@ -41,5 +41,18 @@ def personelpatientsprescription():
 @app.route("/personelpatientaddnewmedicalhistory")
 def personelpatientaddnewmedicalhistory():
   return render_template("personelpatientdetails.html")
+
+@app.route("/hospitaladdnewpatient")
+def hospitaladdnewpatient():
+  return render_template("hospitaladdnewpatient.html")
+
+@app.route("/forgetpassword")
+def forgetpassword():
+  return render_template("forgetpassword.html")
+
+@app.route("/newpassword")
+def newpassword():
+  return render_template("newpassword.html")
+
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug = True)

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Patient</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Additional inline styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .add-patient-form {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    .add-patient-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .add-patient-form input[type="text"],
+    .add-patient-form textarea {
+      width: calc(100% - 12px);
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .add-patient-form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-patient-form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Add New Patient</h2>
+
+    <div class="add-patient-form">
+      <form>
+        <label for="patientNumber">Patient Number</label>
+        <input type="text" id="patientNumber" name="patientNumber" placeholder="Enter patient number" required>
+
+        <label for="patientName">Patient Name</label>
+        <input type="text" id="patientName" name="patientName" placeholder="Enter patient name" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Enter address"></textarea>
+
+        <label for="birthplace">Birthplace</label>
+        <input type="text" id="birthplace" name="birthplace" placeholder="Enter birthplace">
+
+        <label for="bloodType">Blood Type</label>
+        <input type="text" id="bloodType" name="bloodType" placeholder="Enter blood type">
+
+        <label for="parentsName">Parents' Names</label>
+        <input type="text" id="parentsName" name="parentsName" placeholder="Enter parents' names">
+
+        <label for="contactDetails">Contact Details</label>
+        <textarea id="contactDetails" name="contactDetails" placeholder="Enter contact details"></textarea>
+
+        <input type="submit" value="Save">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

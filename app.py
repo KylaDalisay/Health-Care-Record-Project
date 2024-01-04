@@ -30,9 +30,16 @@ def patientlist():
 def personelpatientdetailes():
   return render_template("personelpatientdetailes.html")
 
-@app.route("/personelpatientsmedicalhistory")
+@app.route("/personelpatientsdrescription")
 def personelpatientsmedicalhistory():
   return render_template("personelpatientsmedicalhistory.html")
-  
+
+@app.route("/personelpatientsmedicalhistorylist")
+def personelpatientsprescription():
+  return render_template("personelpatientdetails.html")
+
+@app.route("/personelpatientaddnewmedicalhistory")
+def personelpatientaddnewmedicalhistory():
+  return render_template("personelpatientdetails.html")
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug = True)

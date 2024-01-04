@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Medical History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Additional inline styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .add-history-form {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    .add-history-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .add-history-form input[type="text"],
+    .add-history-form textarea {
+      width: calc(100% - 12px);
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .add-history-form .btn-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .add-history-form .btn-group button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .save-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+    }
+    .save-btn:hover {
+      background-color: #0056b3;
+    }
+    .discard-btn {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+    }
+    .discard-btn:hover {
+      background-color: #bd2130;
+    }
+    .submit-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+    }
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Add New Medical History</h2>
+
+    <div class="add-history-form">
+      <form>
+        <label for="healthCondition">Health Condition</label>
+        <input type="text" id="healthCondition" name="healthCondition" placeholder="Enter health condition" required>
+
+        <label for="medicalTreatment">Medical Treatment</label>
+        <textarea id="medicalTreatment" name="medicalTreatment" placeholder="Enter medical treatment"></textarea>
+
+        <label for="physicianInCharge">Physician in Charge</label>
+        <input type="text" id="physicianInCharge" name="physicianInCharge" placeholder="Enter physician's name">
+
+        <label for="date">Date</label>
+        <input type="text" id="date" name="date" placeholder="YYYY-MM-DD" required>
+
+        <label for="testHistory">Test History</label>
+        <textarea id="testHistory" name="testHistory" placeholder="Enter test history"></textarea>
+
+        <div class="btn-group">
+          <button class="save-btn" type="button">Save</button>
+          <button class="discard-btn" type="button">Discard</button>
+          <button class="submit-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

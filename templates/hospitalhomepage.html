@@ -80,3 +80,6 @@
 
 </body>
 </html>
+@app.route('/signup', methods=['GET', 'POST'])
+def signUp():
+  return render_template('signUp.html')

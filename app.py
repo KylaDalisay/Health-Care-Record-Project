@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, request, session
+from flask_session import Session
 
 app = Flask(__name__)
 
@@ -6,11 +7,12 @@ app = Flask(__name__)
 def hello_world():
  return render_template('halcyonCenter.html')
   
-@app.route('/signup', methods=['GET', 'POST'])
+@app.route('/signup', methods=['POST', 'GET'])
 def signup():
+  
   return render_template('signup.html')
 
-@app.route('/doctorsHomepage')
+@app.route('/doctorsHomepage', methods=['POST','GET'])
 def hospitalhomepage():
   return render_template('hospitalhomepage.html')
 
